@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>EC BIM</Name>
+		<Assembly>C:\Users\nguye\source\repos\Autocontrole\Autocontrole.dll</Assembly>
+		<AddInId>DB5DDAFF-E022-4A33-B18C-E7F08610ED67</AddInId>
+		<FullClassName>Autocontrole.Main</FullClassName>
+		<VendorId>Dang Quynh NGUYEN</VendorId>
+		<Publisher>Eiffage Construction</Publisher>
+		<VendorDescription>Developed by Dang Quynh NGUYEN (Eiffage Construction)</VendorDescription>
+	</AddIn>
+</RevitAddIns>

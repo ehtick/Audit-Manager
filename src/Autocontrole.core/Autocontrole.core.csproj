@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8831DD3-3F99-405D-AEC6-EBBF3F043528}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Autocontrole.core</RootNamespace>
+    <AssemblyName>Autocontrole.core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\ext\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\ext\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\AnnotatePanel\Configuration\ConfigurationCommand.cs" />
+    <Compile Include="Commands\AnnotatePanel\Configuration\ConfigurationCommandData.cs" />
+    <Compile Include="Commands\AnnotatePanel\Configuration\ConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\ConfigurationForm.Designer.cs">
+      <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleCoherenceGenerale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleCoherenceGenerale.Designer.cs">
+      <DependentUpon>pointsControleCoherenceGenerale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleReglesModelisationArchitecturale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleReglesModelisationArchitecturale.Designer.cs">
+      <DependentUpon>pointsControleReglesModelisationArchitecturale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleReglesModelisationStructurale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleReglesModelisationStructurale.Designer.cs">
+      <DependentUpon>pointsControleReglesModelisationStructurale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleFormatDocumentDiffusion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleFormatDocumentDiffusion.Designer.cs">
+      <DependentUpon>pointsControleFormatDocumentDiffusion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleInformationGeolocalisation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleInformationGeolocalisation.Designer.cs">
+      <DependentUpon>pointsControleInformationGeolocalisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleOrganisationDonnee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleOrganisationDonnee.Designer.cs">
+      <DependentUpon>pointsControleOrganisationDonnee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleOrganisationFichier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleOrganisationFichier.Designer.cs">
+      <DependentUpon>pointsControleOrganisationFichier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleStandardsGraphiques.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleStandardsGraphiques.Designer.cs">
+      <DependentUpon>pointsControleStandardsGraphiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleStructurationModele.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleStructurationModele.Designer.cs">
+      <DependentUpon>pointsControleStructurationModele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleVues2dFeuilles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleVues2dFeuilles.Designer.cs">
+      <DependentUpon>pointsControleVues2dFeuilles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\PointsDeControleManager\PointsDeControleManagerCommand.cs" />
+    <Compile Include="Commands\PaneIdentifiers.cs" />
+    <Compile Include="CoreAssembly.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CoreClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\ConfigurationForm.resx">
+      <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleCoherenceGenerale.resx">
+      <DependentUpon>pointsControleCoherenceGenerale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleReglesModelisationArchitecturale.resx">
+      <DependentUpon>pointsControleReglesModelisationArchitecturale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleReglesModelisationStructurale.resx">
+      <DependentUpon>pointsControleReglesModelisationStructurale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleFormatDocumentDiffusion.resx">
+      <DependentUpon>pointsControleFormatDocumentDiffusion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleInformationGeolocalisation.resx">
+      <DependentUpon>pointsControleInformationGeolocalisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleOrganisationDonnee.resx">
+      <DependentUpon>pointsControleOrganisationDonnee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleOrganisationFichier.resx">
+      <DependentUpon>pointsControleOrganisationFichier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleStandardsGraphiques.resx">
+      <DependentUpon>pointsControleStandardsGraphiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleStructurationModele.resx">
+      <DependentUpon>pointsControleStructurationModele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleVues2dFeuilles.resx">
+      <DependentUpon>pointsControleVues2dFeuilles.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\AnnotatePanel\Configuration\Modelisation\CoherenceGenerale\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Modelisation\ReglesModelisationArchitecturale\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Modelisation\ReglesModelisationStructurale\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\FormatDocumentDiffusion\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\InformationGeolocalisation\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\OrganisationDonnee\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\OrganisationFichier\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\StandardsGraphiques\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\StructurationModele\" />
+    <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\Vues2dFeuilles\" />
+    <Folder Include="Commands\Helpers\" />
+    <Folder Include="Commands\Selection\" />
+    <Folder Include="Commands\Type\" />
+    <Folder Include="Utility\Units\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

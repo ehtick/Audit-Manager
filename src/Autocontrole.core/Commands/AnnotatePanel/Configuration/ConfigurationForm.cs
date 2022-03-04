@@ -79,6 +79,28 @@
             this.DialogResult = DialogResult.Cancel;
             Close();
         }
+
+        /// <summary>
+        /// Handles the Click event of the btnEnregistrer control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnEnregistrer_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            Close();
+        }
+
+        /// <summary>
+        /// Handles the Click event of the btnOuvrir control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnOuvrir_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            Close();
+        }
         #endregion
 
         #region Catégorie Organisation
@@ -235,11 +257,13 @@
             pointsControleReglesModelisationStructurale.Visible = true;
         }
 
+
         #endregion
 
         #region public methods
 
         #endregion
 
+        
     }
 }

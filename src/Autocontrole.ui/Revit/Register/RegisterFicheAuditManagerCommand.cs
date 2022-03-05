@@ -1,4 +1,4 @@
-﻿namespace Autocontrole.ui
+﻿namespace ECBManager.ui
 {
     using System.Windows;
     

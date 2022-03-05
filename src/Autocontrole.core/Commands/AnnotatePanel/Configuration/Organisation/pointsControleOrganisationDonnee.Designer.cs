@@ -1,4 +1,4 @@
-﻿namespace Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation
+﻿namespace ECBManager.core.Commands.AnnotatePanel.Configuration.Organisation
 {
     partial class pointsControleOrganisationDonnee
     {

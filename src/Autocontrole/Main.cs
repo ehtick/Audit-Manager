@@ -1,4 +1,4 @@
-﻿namespace Autocontrole
+﻿namespace ECBManager
 {
     using Autodesk.Revit.DB.Events;
     using Autodesk.Revit.ApplicationServices;

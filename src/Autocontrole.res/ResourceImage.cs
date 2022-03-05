@@ -1,4 +1,4 @@
-﻿namespace Autocontrole.res
+﻿namespace ECBManager.res
 {
     using System.Windows.Media.Imaging;
 

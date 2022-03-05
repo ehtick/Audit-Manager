@@ -1,4 +1,4 @@
-﻿namespace Autocontrole.core
+﻿namespace ECBManager.core
 {
     partial class PointsControleFormatDocumentDiffusion
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation
+namespace ECBManager.core.Commands.AnnotatePanel.Configuration.Modelisation
 {
     public partial class pointsControleCoherenceGenerale : UserControl
     {

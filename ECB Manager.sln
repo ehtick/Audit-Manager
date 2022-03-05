@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocontrole", "src\Autocontrole\Autocontrole.csproj", "{EE42B8DC-EEA1-4319-8945-555436200858}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBManager", "src\Autocontrole\ECBManager.csproj", "{EE42B8DC-EEA1-4319-8945-555436200858}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B21801E-F3E8-4277-8B7F-6B6BCCC0E6D4}"
 	ProjectSection(SolutionItems) = preProject
-		addin\Autocontrole.addin = addin\Autocontrole.addin
+		addin\ECBManager.addin = addin\ECBManager.addin
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocontrole.core", "src\Autocontrole.core\Autocontrole.core.csproj", "{B8831DD3-3F99-405D-AEC6-EBBF3F043528}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBManager.core", "src\Autocontrole.core\ECBManager.core.csproj", "{B8831DD3-3F99-405D-AEC6-EBBF3F043528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocontrole.res", "src\Autocontrole.res\Autocontrole.res.csproj", "{CBCB72BB-E586-4CB6-832D-997F71CD5836}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBManager.res", "src\Autocontrole.res\ECBManager.res.csproj", "{CBCB72BB-E586-4CB6-832D-997F71CD5836}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocontrole.ui", "src\Autocontrole.ui\Autocontrole.ui.csproj", "{2C99E995-517F-4634-B71B-837A2E6AB854}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECBManager.ui", "src\Autocontrole.ui\ECBManager.ui.csproj", "{2C99E995-517F-4634-B71B-837A2E6AB854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿namespace Autocontrole.core
+﻿namespace ECBManager.core
 {
     partial class ConfigurationForm
     {
@@ -37,21 +37,21 @@
             this.btnOrganisationFichier = new System.Windows.Forms.Button();
             this.btnInformationGeolocalisation = new System.Windows.Forms.Button();
             this.groupPointsControle = new System.Windows.Forms.GroupBox();
-            this.pointsControleVues2dFeuilles = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleVues2dFeuilles();
-            this.pointsControleStandardsGraphiques = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleStandardsGraphiques();
-            this.pointsControleOrganisationDonnee = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleOrganisationDonnee();
-            this.pointsControleStructurationModele = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleStructurationModele();
-            this.pointsControleOrganisationFichier = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.PointsControleOrganisationFichier();
-            this.pointsControleInformationGeolocalisation = new Autocontrole.core.PointsControleInformationGeolocalisation();
-            this.pointsControleFormatDocumentDiffusion = new Autocontrole.core.PointsControleFormatDocumentDiffusion();
+            this.pointsControleVues2dFeuilles = new ECBManager.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleVues2dFeuilles();
+            this.pointsControleStandardsGraphiques = new ECBManager.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleStandardsGraphiques();
+            this.pointsControleOrganisationDonnee = new ECBManager.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleOrganisationDonnee();
+            this.pointsControleStructurationModele = new ECBManager.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleStructurationModele();
+            this.pointsControleOrganisationFichier = new ECBManager.core.Commands.AnnotatePanel.Configuration.Organisation.PointsControleOrganisationFichier();
+            this.pointsControleInformationGeolocalisation = new ECBManager.core.PointsControleInformationGeolocalisation();
+            this.pointsControleFormatDocumentDiffusion = new ECBManager.core.PointsControleFormatDocumentDiffusion();
             this.btnFormatDocumentDiffusion = new System.Windows.Forms.Button();
             this.tabModelisation = new System.Windows.Forms.TabPage();
             this.btnReglesModelisationStructurale = new System.Windows.Forms.Button();
             this.btnReglesModelisationArchitecturale = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pointsControleReglesModelisationStructurale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.PointsControleReglesModelisationStructurale();
-            this.pointsControleReglesModelisationArchitecturale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleReglesModelisationArchitecturale();
-            this.pointsControleCoherenceGenerale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleCoherenceGenerale();
+            this.pointsControleReglesModelisationStructurale = new ECBManager.core.Commands.AnnotatePanel.Configuration.Modelisation.PointsControleReglesModelisationStructurale();
+            this.pointsControleReglesModelisationArchitecturale = new ECBManager.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleReglesModelisationArchitecturale();
+            this.pointsControleCoherenceGenerale = new ECBManager.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleCoherenceGenerale();
             this.btnCoherenceGenerale = new System.Windows.Forms.Button();
             this.btnValider = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();

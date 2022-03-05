@@ -7,8 +7,8 @@
     <ProjectGuid>{B8831DD3-3F99-405D-AEC6-EBBF3F043528}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Autocontrole.core</RootNamespace>
-    <AssemblyName>Autocontrole.core</AssemblyName>
+    <RootNamespace>ECBManager.core</RootNamespace>
+    <AssemblyName>ECBManager.core</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

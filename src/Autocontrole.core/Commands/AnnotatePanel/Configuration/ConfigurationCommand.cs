@@ -1,4 +1,4 @@
-﻿namespace Autocontrole.core
+﻿namespace ECBManager.core
 {
     using System.Windows.Forms;
     using Autodesk.Revit.UI;

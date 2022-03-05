@@ -1,4 +1,4 @@
-﻿namespace Autocontrole.core
+﻿namespace ECBManager.core
 {
     /// <summary>
     /// Specific window message type.

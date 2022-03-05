@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2C99E995-517F-4634-B71B-837A2E6AB854}</ProjectGuid>
     <OutputType>library</OutputType>
-    <RootNamespace>Autocontrole.ui</RootNamespace>
-    <AssemblyName>Autocontrole.ui</AssemblyName>
+    <RootNamespace>ECBManager.ui</RootNamespace>
+    <AssemblyName>ECBManager.ui</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -69,11 +69,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Revit\Register\RegisterPointsDeControleManagerCommand.cs" />
+    <Compile Include="Revit\Register\RegisterFicheAuditManagerCommand.cs" />
     <Compile Include="Revit\RevitPushButton.cs" />
     <Compile Include="Revit\RevitPushButtonDataModel.cs" />
-    <Compile Include="UI\Pages\PointsDeControleManagerMainPage.xaml.cs">
-      <DependentUpon>PointsDeControleManagerMainPage.xaml</DependentUpon>
+    <Compile Include="UI\Pages\FicheAuditManagerMainPage.xaml.cs">
+      <DependentUpon>FicheAuditManagerMainPage.xaml</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,17 +85,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Autocontrole.core\Autocontrole.core.csproj">
+    <ProjectReference Include="..\Autocontrole.core\ECBManager.core.csproj">
       <Project>{b8831dd3-3f99-405d-aec6-ebbf3f043528}</Project>
-      <Name>Autocontrole.core</Name>
+      <Name>ECBManager.core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Autocontrole.res\Autocontrole.res.csproj">
+    <ProjectReference Include="..\Autocontrole.res\ECBManager.res.csproj">
       <Project>{cbcb72bb-e586-4cb6-832d-997f71cd5836}</Project>
-      <Name>Autocontrole.res</Name>
+      <Name>ECBManager.res</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="UI\Pages\PointsDeControleManagerMainPage.xaml">
+    <Page Include="UI\Pages\FicheAuditManagerMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

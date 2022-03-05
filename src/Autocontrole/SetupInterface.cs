@@ -1,4 +1,4 @@
-﻿namespace Autocontrole
+﻿namespace ECBManager
 {
     using Autodesk.Revit.UI;
     using ui;

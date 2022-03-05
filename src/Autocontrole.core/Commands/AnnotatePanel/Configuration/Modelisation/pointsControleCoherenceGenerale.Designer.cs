@@ -1,4 +1,4 @@
-﻿namespace Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation
+﻿namespace ECBManager.core.Commands.AnnotatePanel.Configuration.Modelisation
 {
     partial class pointsControleCoherenceGenerale
     {

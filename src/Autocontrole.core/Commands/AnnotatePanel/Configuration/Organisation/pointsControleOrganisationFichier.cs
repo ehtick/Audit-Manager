@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation
+namespace ECBManager.core.Commands.AnnotatePanel.Configuration.Organisation
 {
     public partial class PointsControleOrganisationFichier : UserControl
     {

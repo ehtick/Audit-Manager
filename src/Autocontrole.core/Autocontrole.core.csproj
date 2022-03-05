@@ -120,13 +120,12 @@
     <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleVues2dFeuilles.Designer.cs">
       <DependentUpon>pointsControleVues2dFeuilles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Commands\AnnotatePanel\PointsDeControleManager\PointsDeControleManagerCommand.cs" />
+    <Compile Include="Commands\AnnotatePanel\FicheAuditManager\FicheAuditManagerCommand.cs" />
+    <Compile Include="Commands\Helpers\Message.cs" />
     <Compile Include="Commands\PaneIdentifiers.cs" />
+    <Compile Include="Commands\Type\WindowType.cs" />
     <Compile Include="CoreAssembly.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="CoreClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\ConfigurationForm.resx">
@@ -174,9 +173,7 @@
     <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\StandardsGraphiques\" />
     <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\StructurationModele\" />
     <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\Vues2dFeuilles\" />
-    <Folder Include="Commands\Helpers\" />
     <Folder Include="Commands\Selection\" />
-    <Folder Include="Commands\Type\" />
     <Folder Include="Utility\Units\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

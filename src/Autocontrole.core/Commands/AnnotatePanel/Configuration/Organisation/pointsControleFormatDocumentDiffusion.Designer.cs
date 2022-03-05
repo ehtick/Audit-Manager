@@ -69,7 +69,6 @@
             this.rbtnNomFichier.TabStop = true;
             this.rbtnNomFichier.Text = "Nom du fichier conforme";
             this.rbtnNomFichier.UseVisualStyleBackColor = true;
-            this.rbtnNomFichier.CheckedChanged += new System.EventHandler(this.rbtnNomFichier_CheckedChanged);
             // 
             // groupReglesControle
             // 

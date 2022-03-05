@@ -9,7 +9,7 @@
     /// <seealso cref="Autodesk.Revit.UI.IExternalCommand"/>
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
-    public class PointsDeControleManagerCommand : IExternalCommand
+    public class FicheAuditManagerCommand : IExternalCommand
     {
         #region public methods
 
@@ -38,7 +38,7 @@
         public static string GetPath()
         {
             // Return constructed namespace path.
-            return typeof(PointsDeControleManagerCommand).Namespace + "." + nameof(PointsDeControleManagerCommand);
+            return typeof(FicheAuditManagerCommand).Namespace + "." + nameof(FicheAuditManagerCommand);
         }
 
         #endregion

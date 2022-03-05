@@ -13,9 +13,9 @@
     public class ConfigurationCommand : IExternalCommand
     {
         #region public methods
-        
+
         /// <summary>
-        /// Tag wall layers by creating text note element on user specified point and populate it with layer information.
+        /// Establish basic parameters for audit rules.
         /// </summary>
         /// <param name="commandData"></param>
         /// <param name="message"></param>
@@ -28,6 +28,13 @@
             var uidoc = commandData.Application.ActiveUIDocument;
             var doc = uidoc.Document;
 
+            // Check if we are in the Revit project, not a family one.
+            if (doc.IsFamilyDocument)
+            {
+                Message.Display("Can't use command in family document.", WindowType.Warning);
+                return Result.Cancelled;
+            }
+
             // Get user provided information from window and show dialog.
             using (var window = new ConfigurationForm(uidoc))
             {
@@ -36,6 +43,7 @@
                 if (window.DialogResult == DialogResult.OK)
                     return Result.Cancelled;
             }
+
             return Result.Succeeded;
         }
 

@@ -54,8 +54,8 @@
         private void DockablePaneRegisters(object sender, ApplicationInitializedEventArgs e)
         {
             // Register dockable pane.
-            var pointsDeControleManagerRegisterCommand = new RegisterPointsDeControleManagerCommand();
-            pointsDeControleManagerRegisterCommand.Execute(new UIApplication(sender as Application));
+            var ficheAuditManagerRegisterCommand = new RegisterFicheAuditManagerCommand();
+            ficheAuditManagerRegisterCommand.Execute(new UIApplication(sender as Application));
         }
 
         #endregion

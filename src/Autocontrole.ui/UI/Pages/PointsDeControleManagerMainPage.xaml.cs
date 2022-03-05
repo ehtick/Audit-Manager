@@ -5,17 +5,17 @@
     using System.Windows;
     using System.Windows.Controls;
     /// <summary>
-    /// Interaction logic for PointsDeControleManagerMainPage.xaml
+    /// Interaction logic for FicheAuditManagerMainPage.xaml
     /// </summary>
-    public partial class PointsDeControleManagerMainPage : Page, IDisposable, IDockablePaneProvider
+    public partial class FicheAuditManagerMainPage : Page, IDisposable, IDockablePaneProvider
     {
         #region constructor
 
         /// <summary>
         /// Default constructor.
-        /// Initializes a new instance of the <see cref="PointsDeControleManagerMainPage"/>.
+        /// Initializes a new instance of the <see cref="FicheAuditManagerMainPage"/>.
         /// </summary>
-        public PointsDeControleManagerMainPage()
+        public FicheAuditManagerMainPage()
         {
             InitializeComponent();
         }

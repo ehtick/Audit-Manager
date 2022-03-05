@@ -13,7 +13,7 @@
     /// <seealso cref="Autodesk.Revit.UI.IExternalCommand"/>
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
-    public class RegisterPointsDeControleManagerCommand : IExternalCommand
+    public class RegisterFicheAuditManagerCommand : IExternalCommand
     {
         #region public methods
 
@@ -39,7 +39,7 @@
             // Todo implement register...
 
             var data = new DockablePaneProviderData();
-            var managerPage = new PointsDeControleManagerMainPage();
+            var managerPage = new FicheAuditManagerMainPage();
 
             // Setup initial state.
             data.FrameworkElement = managerPage as FrameworkElement;
@@ -50,7 +50,7 @@
 
             // Use unique guid identifier for this dockable pane.
             var dpid = new DockablePaneId(PaneIdentifiers.GetManagerPaneIdentidiers());
-            uIApplication.RegisterDockablePane(dpid, "EC BIM Audit Manager", managerPage as IDockablePaneProvider);
+            uIApplication.RegisterDockablePane(dpid, "ECB Fiche d'Audit Manager", managerPage as IDockablePaneProvider);
 
 
             return Result.Succeeded;

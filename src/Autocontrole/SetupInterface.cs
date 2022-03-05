@@ -31,16 +31,16 @@
         public void Initialize(UIControlledApplication app)
         {
             // Create ribbon tab.
-            string tabName = "EC BIM";
+            string tabName = "ECB Manager";
             app.CreateRibbonTab(tabName);
 
             // Create the ribbon panels.
-            var annotateCommandsPanel = app.CreateRibbonPanel(tabName, "Autocontrôle Manager");
+            var annotateCommandsPanel = app.CreateRibbonPanel(tabName, "ECB Audit Manager");
             
             #region annotate
 
             // Populate button data model.
-            var AutocontroleButtonData = new RevitPushButtonDataModel
+            var ConfigurationButtonData = new RevitPushButtonDataModel
             {
                 Label = "Configuration",
                 Panel = annotateCommandsPanel,
@@ -51,23 +51,23 @@
             };
 
             // Create button from provided data.
-            var AutocontroleButton = RevitPushButton.Create(AutocontroleButtonData);
+            var ConfigurationButton = RevitPushButton.Create(ConfigurationButtonData);
 
             #endregion
 
             #region manager
 
-            var PointsDeControleButtonData = new RevitPushButtonDataModel
+            var FicheAuditButtonData = new RevitPushButtonDataModel
             {
-                Label = "Points de contrôle\nManager",
+                Label = "Fiche d'audit",
                 Panel = annotateCommandsPanel,
-                Tooltip = "This is some tooltip text,\nraplace it with the real one later.",
-                CommandNamespacePath = PointsDeControleManagerCommand.GetPath(),
+                Tooltip = "Ouvrir ECB Fiche d'Audit Manager.",
+                CommandNamespacePath = FicheAuditManagerCommand.GetPath(),
                 IconImageName = "Logo_PointsDeControleManager_23x23.png",
                 TooltipImageName = "Tooltip_Configuration_223x223.png"
             };
 
-            var PointsDeControleButton = RevitPushButton.Create(PointsDeControleButtonData);
+            var FicheAuditButton = RevitPushButton.Create(FicheAuditButtonData);
 
             #endregion
 

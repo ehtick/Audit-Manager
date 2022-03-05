@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation
 {
-    public partial class pointsControleOrganisationFichier : UserControl
+    public partial class PointsControleOrganisationFichier : UserControl
     {
-        public pointsControleOrganisationFichier()
+        public PointsControleOrganisationFichier()
         {
             InitializeComponent();
         }

@@ -37,11 +37,21 @@
             this.btnOrganisationFichier = new System.Windows.Forms.Button();
             this.btnInformationGeolocalisation = new System.Windows.Forms.Button();
             this.groupPointsControle = new System.Windows.Forms.GroupBox();
+            this.pointsControleVues2dFeuilles = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleVues2dFeuilles();
+            this.pointsControleStandardsGraphiques = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleStandardsGraphiques();
+            this.pointsControleOrganisationDonnee = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleOrganisationDonnee();
+            this.pointsControleStructurationModele = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleStructurationModele();
+            this.pointsControleOrganisationFichier = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.PointsControleOrganisationFichier();
+            this.pointsControleInformationGeolocalisation = new Autocontrole.core.PointsControleInformationGeolocalisation();
+            this.pointsControleFormatDocumentDiffusion = new Autocontrole.core.PointsControleFormatDocumentDiffusion();
             this.btnFormatDocumentDiffusion = new System.Windows.Forms.Button();
             this.tabModelisation = new System.Windows.Forms.TabPage();
             this.btnReglesModelisationStructurale = new System.Windows.Forms.Button();
             this.btnReglesModelisationArchitecturale = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pointsControleReglesModelisationStructurale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.PointsControleReglesModelisationStructurale();
+            this.pointsControleReglesModelisationArchitecturale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleReglesModelisationArchitecturale();
+            this.pointsControleCoherenceGenerale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleCoherenceGenerale();
             this.btnCoherenceGenerale = new System.Windows.Forms.Button();
             this.btnValider = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
@@ -49,16 +59,6 @@
             this.btnReinitialiser = new System.Windows.Forms.Button();
             this.btnEnregistrer = new System.Windows.Forms.Button();
             this.btnOuvrir = new System.Windows.Forms.Button();
-            this.pointsControleVues2dFeuilles = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleVues2dFeuilles();
-            this.pointsControleStandardsGraphiques = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleStandardsGraphiques();
-            this.pointsControleOrganisationDonnee = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleOrganisationDonnee();
-            this.pointsControleStructurationModele = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleStructurationModele();
-            this.pointsControleOrganisationFichier = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation.pointsControleOrganisationFichier();
-            this.pointsControleInformationGeolocalisation = new Autocontrole.core.PointsControleInformationGeolocalisation();
-            this.pointsControleFormatDocumentDiffusion = new Autocontrole.core.pointsControleFormatDocumentDiffusion();
-            this.pointsControleReglesModelisationStructurale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.PointsControleReglesModelisationStructurale();
-            this.pointsControleReglesModelisationArchitecturale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleReglesModelisationArchitecturale();
-            this.pointsControleCoherenceGenerale = new Autocontrole.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleCoherenceGenerale();
             this.tabConfiguration.SuspendLayout();
             this.tabOrganisation.SuspendLayout();
             this.groupPointsControle.SuspendLayout();
@@ -176,6 +176,62 @@
             this.groupPointsControle.TabStop = false;
             this.groupPointsControle.Text = "Points de contrôle";
             // 
+            // pointsControleVues2dFeuilles
+            // 
+            this.pointsControleVues2dFeuilles.Location = new System.Drawing.Point(6, 19);
+            this.pointsControleVues2dFeuilles.Name = "pointsControleVues2dFeuilles";
+            this.pointsControleVues2dFeuilles.Size = new System.Drawing.Size(789, 505);
+            this.pointsControleVues2dFeuilles.TabIndex = 6;
+            this.pointsControleVues2dFeuilles.Visible = false;
+            // 
+            // pointsControleStandardsGraphiques
+            // 
+            this.pointsControleStandardsGraphiques.Location = new System.Drawing.Point(6, 19);
+            this.pointsControleStandardsGraphiques.Name = "pointsControleStandardsGraphiques";
+            this.pointsControleStandardsGraphiques.Size = new System.Drawing.Size(789, 505);
+            this.pointsControleStandardsGraphiques.TabIndex = 5;
+            this.pointsControleStandardsGraphiques.Visible = false;
+            // 
+            // pointsControleOrganisationDonnee
+            // 
+            this.pointsControleOrganisationDonnee.Location = new System.Drawing.Point(6, 19);
+            this.pointsControleOrganisationDonnee.Name = "pointsControleOrganisationDonnee";
+            this.pointsControleOrganisationDonnee.Size = new System.Drawing.Size(789, 505);
+            this.pointsControleOrganisationDonnee.TabIndex = 4;
+            this.pointsControleOrganisationDonnee.Visible = false;
+            // 
+            // pointsControleStructurationModele
+            // 
+            this.pointsControleStructurationModele.Location = new System.Drawing.Point(6, 19);
+            this.pointsControleStructurationModele.Name = "pointsControleStructurationModele";
+            this.pointsControleStructurationModele.Size = new System.Drawing.Size(789, 505);
+            this.pointsControleStructurationModele.TabIndex = 3;
+            this.pointsControleStructurationModele.Visible = false;
+            // 
+            // pointsControleOrganisationFichier
+            // 
+            this.pointsControleOrganisationFichier.Location = new System.Drawing.Point(6, 19);
+            this.pointsControleOrganisationFichier.Name = "pointsControleOrganisationFichier";
+            this.pointsControleOrganisationFichier.Size = new System.Drawing.Size(789, 505);
+            this.pointsControleOrganisationFichier.TabIndex = 2;
+            this.pointsControleOrganisationFichier.Visible = false;
+            // 
+            // pointsControleInformationGeolocalisation
+            // 
+            this.pointsControleInformationGeolocalisation.Location = new System.Drawing.Point(6, 19);
+            this.pointsControleInformationGeolocalisation.Name = "pointsControleInformationGeolocalisation";
+            this.pointsControleInformationGeolocalisation.Size = new System.Drawing.Size(789, 505);
+            this.pointsControleInformationGeolocalisation.TabIndex = 1;
+            this.pointsControleInformationGeolocalisation.Visible = false;
+            // 
+            // pointsControleFormatDocumentDiffusion
+            // 
+            this.pointsControleFormatDocumentDiffusion.Location = new System.Drawing.Point(6, 19);
+            this.pointsControleFormatDocumentDiffusion.Name = "pointsControleFormatDocumentDiffusion";
+            this.pointsControleFormatDocumentDiffusion.Size = new System.Drawing.Size(787, 518);
+            this.pointsControleFormatDocumentDiffusion.TabIndex = 0;
+            this.pointsControleFormatDocumentDiffusion.Visible = false;
+            // 
             // btnFormatDocumentDiffusion
             // 
             this.btnFormatDocumentDiffusion.Location = new System.Drawing.Point(7, 11);
@@ -234,6 +290,30 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Points de contrôle";
+            // 
+            // pointsControleReglesModelisationStructurale
+            // 
+            this.pointsControleReglesModelisationStructurale.Location = new System.Drawing.Point(6, 17);
+            this.pointsControleReglesModelisationStructurale.Name = "pointsControleReglesModelisationStructurale";
+            this.pointsControleReglesModelisationStructurale.Size = new System.Drawing.Size(789, 533);
+            this.pointsControleReglesModelisationStructurale.TabIndex = 2;
+            this.pointsControleReglesModelisationStructurale.Visible = false;
+            // 
+            // pointsControleReglesModelisationArchitecturale
+            // 
+            this.pointsControleReglesModelisationArchitecturale.Location = new System.Drawing.Point(6, 17);
+            this.pointsControleReglesModelisationArchitecturale.Name = "pointsControleReglesModelisationArchitecturale";
+            this.pointsControleReglesModelisationArchitecturale.Size = new System.Drawing.Size(789, 505);
+            this.pointsControleReglesModelisationArchitecturale.TabIndex = 1;
+            this.pointsControleReglesModelisationArchitecturale.Visible = false;
+            // 
+            // pointsControleCoherenceGenerale
+            // 
+            this.pointsControleCoherenceGenerale.Location = new System.Drawing.Point(6, 17);
+            this.pointsControleCoherenceGenerale.Name = "pointsControleCoherenceGenerale";
+            this.pointsControleCoherenceGenerale.Size = new System.Drawing.Size(789, 505);
+            this.pointsControleCoherenceGenerale.TabIndex = 0;
+            this.pointsControleCoherenceGenerale.Visible = false;
             // 
             // btnCoherenceGenerale
             // 
@@ -307,86 +387,6 @@
             this.btnOuvrir.UseVisualStyleBackColor = true;
             this.btnOuvrir.Click += new System.EventHandler(this.BtnOuvrir_Click);
             // 
-            // pointsControleVues2dFeuilles
-            // 
-            this.pointsControleVues2dFeuilles.Location = new System.Drawing.Point(6, 19);
-            this.pointsControleVues2dFeuilles.Name = "pointsControleVues2dFeuilles";
-            this.pointsControleVues2dFeuilles.Size = new System.Drawing.Size(789, 505);
-            this.pointsControleVues2dFeuilles.TabIndex = 6;
-            this.pointsControleVues2dFeuilles.Visible = false;
-            // 
-            // pointsControleStandardsGraphiques
-            // 
-            this.pointsControleStandardsGraphiques.Location = new System.Drawing.Point(6, 19);
-            this.pointsControleStandardsGraphiques.Name = "pointsControleStandardsGraphiques";
-            this.pointsControleStandardsGraphiques.Size = new System.Drawing.Size(789, 505);
-            this.pointsControleStandardsGraphiques.TabIndex = 5;
-            this.pointsControleStandardsGraphiques.Visible = false;
-            // 
-            // pointsControleOrganisationDonnee
-            // 
-            this.pointsControleOrganisationDonnee.Location = new System.Drawing.Point(6, 19);
-            this.pointsControleOrganisationDonnee.Name = "pointsControleOrganisationDonnee";
-            this.pointsControleOrganisationDonnee.Size = new System.Drawing.Size(789, 505);
-            this.pointsControleOrganisationDonnee.TabIndex = 4;
-            this.pointsControleOrganisationDonnee.Visible = false;
-            // 
-            // pointsControleStructurationModele
-            // 
-            this.pointsControleStructurationModele.Location = new System.Drawing.Point(6, 19);
-            this.pointsControleStructurationModele.Name = "pointsControleStructurationModele";
-            this.pointsControleStructurationModele.Size = new System.Drawing.Size(789, 505);
-            this.pointsControleStructurationModele.TabIndex = 3;
-            this.pointsControleStructurationModele.Visible = false;
-            // 
-            // pointsControleOrganisationFichier
-            // 
-            this.pointsControleOrganisationFichier.Location = new System.Drawing.Point(6, 19);
-            this.pointsControleOrganisationFichier.Name = "pointsControleOrganisationFichier";
-            this.pointsControleOrganisationFichier.Size = new System.Drawing.Size(789, 505);
-            this.pointsControleOrganisationFichier.TabIndex = 2;
-            this.pointsControleOrganisationFichier.Visible = false;
-            // 
-            // pointsControleInformationGeolocalisation
-            // 
-            this.pointsControleInformationGeolocalisation.Location = new System.Drawing.Point(6, 19);
-            this.pointsControleInformationGeolocalisation.Name = "pointsControleInformationGeolocalisation";
-            this.pointsControleInformationGeolocalisation.Size = new System.Drawing.Size(789, 505);
-            this.pointsControleInformationGeolocalisation.TabIndex = 1;
-            this.pointsControleInformationGeolocalisation.Visible = false;
-            // 
-            // pointsControleFormatDocumentDiffusion
-            // 
-            this.pointsControleFormatDocumentDiffusion.Location = new System.Drawing.Point(6, 19);
-            this.pointsControleFormatDocumentDiffusion.Name = "pointsControleFormatDocumentDiffusion";
-            this.pointsControleFormatDocumentDiffusion.Size = new System.Drawing.Size(787, 518);
-            this.pointsControleFormatDocumentDiffusion.TabIndex = 0;
-            this.pointsControleFormatDocumentDiffusion.Visible = false;
-            // 
-            // pointsControleReglesModelisationStructurale
-            // 
-            this.pointsControleReglesModelisationStructurale.Location = new System.Drawing.Point(6, 17);
-            this.pointsControleReglesModelisationStructurale.Name = "pointsControleReglesModelisationStructurale";
-            this.pointsControleReglesModelisationStructurale.Size = new System.Drawing.Size(789, 533);
-            this.pointsControleReglesModelisationStructurale.TabIndex = 2;
-            this.pointsControleReglesModelisationStructurale.Visible = false;
-            // 
-            // pointsControleReglesModelisationArchitecturale
-            // 
-            this.pointsControleReglesModelisationArchitecturale.Location = new System.Drawing.Point(6, 17);
-            this.pointsControleReglesModelisationArchitecturale.Name = "pointsControleReglesModelisationArchitecturale";
-            this.pointsControleReglesModelisationArchitecturale.Size = new System.Drawing.Size(789, 505);
-            this.pointsControleReglesModelisationArchitecturale.TabIndex = 1;
-            this.pointsControleReglesModelisationArchitecturale.Visible = false;
-            // 
-            // pointsControleCoherenceGenerale
-            // 
-            this.pointsControleCoherenceGenerale.Location = new System.Drawing.Point(6, 17);
-            this.pointsControleCoherenceGenerale.Name = "pointsControleCoherenceGenerale";
-            this.pointsControleCoherenceGenerale.Size = new System.Drawing.Size(789, 505);
-            this.pointsControleCoherenceGenerale.TabIndex = 0;
-            this.pointsControleCoherenceGenerale.Visible = false;
-            // 
             // ConfigurationForm
             // 
             this.AcceptButton = this.btnValider;
@@ -424,11 +424,11 @@
         private System.Windows.Forms.Button btnAide;
         private System.Windows.Forms.GroupBox groupPointsControle;
         private System.Windows.Forms.Button btnFormatDocumentDiffusion;
-        private pointsControleFormatDocumentDiffusion pointsControleFormatDocumentDiffusion;
+        private PointsControleFormatDocumentDiffusion pointsControleFormatDocumentDiffusion;
         private System.Windows.Forms.Button btnInformationGeolocalisation;
         private PointsControleInformationGeolocalisation pointsControleInformationGeolocalisation;
         private System.Windows.Forms.Button btnOrganisationFichier;
-        private Commands.AnnotatePanel.Configuration.Organisation.pointsControleOrganisationFichier pointsControleOrganisationFichier;
+        private Commands.AnnotatePanel.Configuration.Organisation.PointsControleOrganisationFichier pointsControleOrganisationFichier;
         private System.Windows.Forms.Button btnStructurationModele;
         private Commands.AnnotatePanel.Configuration.Organisation.pointsControleStructurationModele pointsControleStructurationModele;
         private System.Windows.Forms.Button btnOrganisationDonnee;

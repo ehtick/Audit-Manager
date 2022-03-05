@@ -1,6 +1,6 @@
 ﻿namespace Autocontrole.core
 {
-    partial class pointsControleFormatDocumentDiffusion
+    partial class PointsControleFormatDocumentDiffusion
     {
         /// <summary> 
         /// Required designer variable.
@@ -69,6 +69,7 @@
             this.rbtnNomFichier.TabStop = true;
             this.rbtnNomFichier.Text = "Nom du fichier conforme";
             this.rbtnNomFichier.UseVisualStyleBackColor = true;
+            this.rbtnNomFichier.CheckedChanged += new System.EventHandler(this.rbtnNomFichier_CheckedChanged);
             // 
             // groupReglesControle
             // 
@@ -119,7 +120,7 @@
             this.rbtnExportModeleIfc.Text = "Export du modèle IFC";
             this.rbtnExportModeleIfc.UseVisualStyleBackColor = true;
             // 
-            // pointsControleFormatDocumentDiffusion
+            // PointsControleFormatDocumentDiffusion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,9 +132,8 @@
             this.Controls.Add(this.rbtnMaquettePurgee);
             this.Controls.Add(this.rbtnTailleFichier);
             this.Controls.Add(this.rbtnNomFichier);
-            this.Name = "pointsControleFormatDocumentDiffusion";
+            this.Name = "PointsControleFormatDocumentDiffusion";
             this.Size = new System.Drawing.Size(789, 505);
-            this.Load += new System.EventHandler(this.PointsControleFormatDocumentDiffusion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

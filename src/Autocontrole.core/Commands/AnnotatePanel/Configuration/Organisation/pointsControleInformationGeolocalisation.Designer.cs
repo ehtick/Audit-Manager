@@ -109,7 +109,6 @@
             this.Controls.Add(this.rbtnInformationProjet);
             this.Name = "pointsControleInformationGeolocalisation";
             this.Size = new System.Drawing.Size(789, 505);
-            this.Load += new System.EventHandler(this.PointsControleInformationGeolocalisation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

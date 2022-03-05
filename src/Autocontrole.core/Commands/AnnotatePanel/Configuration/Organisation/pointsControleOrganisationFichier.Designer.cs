@@ -1,6 +1,6 @@
 ﻿namespace Autocontrole.core.Commands.AnnotatePanel.Configuration.Organisation
 {
-    partial class pointsControleOrganisationFichier
+    partial class PointsControleOrganisationFichier
     {
         /// <summary> 
         /// Required designer variable.

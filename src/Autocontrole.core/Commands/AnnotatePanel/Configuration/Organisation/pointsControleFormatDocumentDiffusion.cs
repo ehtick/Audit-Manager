@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Autocontrole.core
 {
-    public partial class pointsControleFormatDocumentDiffusion : UserControl
+    public partial class PointsControleFormatDocumentDiffusion : UserControl
     {
-        public pointsControleFormatDocumentDiffusion()
+        public PointsControleFormatDocumentDiffusion()
         {
             InitializeComponent();
-        }
-
-        private void PointsControleFormatDocumentDiffusion_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

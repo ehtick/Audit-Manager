@@ -16,10 +16,5 @@ namespace Autocontrole.core
         {
             InitializeComponent();
         }
-
-        private void PointsControleInformationGeolocalisation_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

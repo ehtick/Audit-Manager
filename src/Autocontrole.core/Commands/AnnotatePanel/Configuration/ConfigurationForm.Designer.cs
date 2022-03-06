@@ -48,7 +48,7 @@
             this.tabModelisation = new System.Windows.Forms.TabPage();
             this.btnReglesModelisationStructurale = new System.Windows.Forms.Button();
             this.btnReglesModelisationArchitecturale = new System.Windows.Forms.Button();
-            //this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pointsControleReglesModelisationStructurale = new ECBManager.core.Commands.AnnotatePanel.Configuration.Modelisation.PointsControleReglesModelisationStructurale();
             this.pointsControleReglesModelisationArchitecturale = new ECBManager.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleReglesModelisationArchitecturale();
             this.pointsControleCoherenceGenerale = new ECBManager.core.Commands.AnnotatePanel.Configuration.Modelisation.pointsControleCoherenceGenerale();
@@ -63,7 +63,7 @@
             this.tabOrganisation.SuspendLayout();
             this.groupPointsControle.SuspendLayout();
             this.tabModelisation.SuspendLayout();
-            //this.groupBox1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabConfiguration
@@ -247,7 +247,7 @@
             // 
             this.tabModelisation.Controls.Add(this.btnReglesModelisationStructurale);
             this.tabModelisation.Controls.Add(this.btnReglesModelisationArchitecturale);
-            //this.tabModelisation.Controls.Add(this.groupBox1);
+            this.tabModelisation.Controls.Add(this.groupBox1);
             this.tabModelisation.Controls.Add(this.btnCoherenceGenerale);
             this.tabModelisation.Location = new System.Drawing.Point(4, 22);
             this.tabModelisation.Name = "tabModelisation";
@@ -281,15 +281,15 @@
             //// 
             //// groupBox1
             //// 
-            //this.groupBox1.Controls.Add(this.pointsControleReglesModelisationStructurale);
-            //this.groupBox1.Controls.Add(this.pointsControleReglesModelisationArchitecturale);
-            //this.groupBox1.Controls.Add(this.pointsControleCoherenceGenerale);
-            //this.groupBox1.Location = new System.Drawing.Point(277, 5);
-            //this.groupBox1.Name = "groupBox1";
-            //this.groupBox1.Size = new System.Drawing.Size(799, 552);
-            //this.groupBox1.TabIndex = 6;
-            //this.groupBox1.TabStop = false;
-            //this.groupBox1.Text = "Points de contrôle";
+            this.groupBox1.Controls.Add(this.pointsControleReglesModelisationStructurale);
+            this.groupBox1.Controls.Add(this.pointsControleReglesModelisationArchitecturale);
+            this.groupBox1.Controls.Add(this.pointsControleCoherenceGenerale);
+            this.groupBox1.Location = new System.Drawing.Point(277, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(799, 552);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Points de contrôle";
             // 
             // pointsControleReglesModelisationStructurale
             // 
@@ -410,7 +410,7 @@
             this.tabOrganisation.ResumeLayout(false);
             this.groupPointsControle.ResumeLayout(false);
             this.tabModelisation.ResumeLayout(false);
-            //this.groupBox1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -438,7 +438,7 @@
         private System.Windows.Forms.Button btnReinitialiser;
         private System.Windows.Forms.Button btnVues2dFeuilles;
         private Commands.AnnotatePanel.Configuration.Organisation.pointsControleVues2dFeuilles pointsControleVues2dFeuilles;
-        //private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnReglesModelisationArchitecturale;
         private System.Windows.Forms.Button btnReglesModelisationStructurale;
         private Commands.AnnotatePanel.Configuration.Modelisation.pointsControleCoherenceGenerale pointsControleCoherenceGenerale;

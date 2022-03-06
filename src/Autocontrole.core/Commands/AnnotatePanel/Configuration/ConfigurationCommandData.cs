@@ -7,12 +7,7 @@
     /// </summary>
     public class ConfigurationCommandData
     {
-        #region public properties chuaxacdinh
-
-        public bool Fonction { get; set; }
-
-        public string Name { get; set; }
-
+        #region public properties
 
 
         #endregion

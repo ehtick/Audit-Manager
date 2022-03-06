@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\AnnotatePanel\CasUsages\CasUsagesCommand.cs" />
+    <Compile Include="Commands\AnnotatePanel\CasUsages\CasUsagesCommandData.cs" />
     <Compile Include="Commands\AnnotatePanel\CasUsages\CasUsagesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +85,12 @@
     </Compile>
     <Compile Include="Commands\AnnotatePanel\Configuration\Modelisation\pointsControleReglesModelisationStructurale.Designer.cs">
       <DependentUpon>pointsControleReglesModelisationStructurale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\FormatDocumentDiffusion\MaquetteDetachee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\FormatDocumentDiffusion\MaquetteDetachee.Designer.cs">
+      <DependentUpon>MaquetteDetachee.cs</DependentUpon>
     </Compile>
     <Compile Include="Commands\AnnotatePanel\Configuration\Organisation\pointsControleFormatDocumentDiffusion.cs">
       <SubType>UserControl</SubType>
@@ -176,7 +183,6 @@
     <Folder Include="Commands\AnnotatePanel\Configuration\Modelisation\CoherenceGenerale\" />
     <Folder Include="Commands\AnnotatePanel\Configuration\Modelisation\ReglesModelisationArchitecturale\" />
     <Folder Include="Commands\AnnotatePanel\Configuration\Modelisation\ReglesModelisationStructurale\" />
-    <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\FormatDocumentDiffusion\" />
     <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\InformationGeolocalisation\" />
     <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\OrganisationDonnee\" />
     <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\OrganisationFichier\" />

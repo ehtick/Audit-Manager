@@ -1,11 +1,12 @@
 ﻿namespace ECBManager.core
 {
     using System;
+    using System.Drawing;
     using System.Windows.Forms;
     using Autodesk.Revit.UI;
 
     /// <summary>
-    /// Configuration data aquisition form.
+    /// Configuration data acquisition form.
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Form"/>.
     public partial class ConfigurationForm : System.Windows.Forms.Form

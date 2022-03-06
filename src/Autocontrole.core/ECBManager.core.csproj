@@ -135,6 +135,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Commands\AnnotatePanel\CasUsages\CasUsagesForm.resx">
+      <DependentUpon>CasUsagesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Commands\AnnotatePanel\Configuration\ConfigurationForm.resx">
       <DependentUpon>ConfigurationForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +184,7 @@
     <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\StructurationModele\" />
     <Folder Include="Commands\AnnotatePanel\Configuration\Organisation\Vues2dFeuilles\" />
     <Folder Include="Commands\Selection\" />
+    <Folder Include="Properties\DataSources\" />
     <Folder Include="Utility\Units\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

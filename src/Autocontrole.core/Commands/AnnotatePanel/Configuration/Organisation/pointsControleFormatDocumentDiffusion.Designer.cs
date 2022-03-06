@@ -47,6 +47,7 @@
             this.rbtnMaquettePurgee.TabIndex = 5;
             this.rbtnMaquettePurgee.Text = "Maquette purgée";
             this.rbtnMaquettePurgee.UseVisualStyleBackColor = true;
+            this.rbtnMaquettePurgee.CheckedChanged += new System.EventHandler(this.RbtnMaquettePurgee_CheckedChanged);
             // 
             // rbtnTailleFichier
             // 
@@ -57,6 +58,7 @@
             this.rbtnTailleFichier.TabIndex = 4;
             this.rbtnTailleFichier.Text = "Taille du fichier";
             this.rbtnTailleFichier.UseVisualStyleBackColor = true;
+            this.rbtnTailleFichier.CheckedChanged += new System.EventHandler(this.RbtnTailleFichier_CheckedChanged);
             // 
             // rbtnNomFichier
             // 
@@ -69,6 +71,7 @@
             this.rbtnNomFichier.TabStop = true;
             this.rbtnNomFichier.Text = "Nom du fichier conforme";
             this.rbtnNomFichier.UseVisualStyleBackColor = true;
+            this.rbtnNomFichier.CheckedChanged += new System.EventHandler(this.RbtnNomFichier_CheckedChanged);
             // 
             // groupReglesControle
             // 
@@ -78,6 +81,7 @@
             this.groupReglesControle.TabIndex = 6;
             this.groupReglesControle.TabStop = false;
             this.groupReglesControle.Text = "Règles de contrôle";
+            this.groupReglesControle.Enter += new System.EventHandler(this.GroupReglesControle_Enter);
             // 
             // rbtnModeleIfcDiffuse
             // 
@@ -88,6 +92,7 @@
             this.rbtnModeleIfcDiffuse.TabIndex = 9;
             this.rbtnModeleIfcDiffuse.Text = "Modèle IFC diffusé";
             this.rbtnModeleIfcDiffuse.UseVisualStyleBackColor = true;
+            this.rbtnModeleIfcDiffuse.CheckedChanged += new System.EventHandler(this.RbtnModeleIfcDiffuse_CheckedChanged);
             // 
             // rbtnModelesDocumentsDecharges
             // 
@@ -98,6 +103,7 @@
             this.rbtnModelesDocumentsDecharges.TabIndex = 8;
             this.rbtnModelesDocumentsDecharges.Text = "Modèles et documents liés déchargés";
             this.rbtnModelesDocumentsDecharges.UseVisualStyleBackColor = true;
+            this.rbtnModelesDocumentsDecharges.CheckedChanged += new System.EventHandler(this.RbtnModelesDocumentsDecharges_CheckedChanged);
             // 
             // rbtnMaquetteDetachee
             // 
@@ -108,6 +114,7 @@
             this.rbtnMaquetteDetachee.TabIndex = 7;
             this.rbtnMaquetteDetachee.Text = "Maquette détachée";
             this.rbtnMaquetteDetachee.UseVisualStyleBackColor = true;
+            this.rbtnMaquetteDetachee.CheckedChanged += new System.EventHandler(this.RbtnMaquetteDetachee_CheckedChanged);
             // 
             // rbtnExportModeleIfc
             // 
@@ -118,6 +125,7 @@
             this.rbtnExportModeleIfc.TabIndex = 10;
             this.rbtnExportModeleIfc.Text = "Export du modèle IFC";
             this.rbtnExportModeleIfc.UseVisualStyleBackColor = true;
+            this.rbtnExportModeleIfc.CheckedChanged += new System.EventHandler(this.RbtnExportModeleIfc_CheckedChanged);
             // 
             // PointsControleFormatDocumentDiffusion
             // 
@@ -133,9 +141,9 @@
             this.Controls.Add(this.rbtnNomFichier);
             this.Name = "PointsControleFormatDocumentDiffusion";
             this.Size = new System.Drawing.Size(789, 505);
+            this.Load += new System.EventHandler(this.PointsControleFormatDocumentDiffusion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

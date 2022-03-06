@@ -10,18 +10,15 @@
     /// <seealso cref="Autodesk.Revit.UI.IExternalCommand"/>
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     [Autodesk.Revit.Attributes.Regeneration(Autodesk.Revit.Attributes.RegenerationOption.Manual)]
-    public class ConfigurationCommand : IExternalCommand
+    public class CasUsagesCommand : IExternalCommand
     {
-        #region public methods
-
         /// <summary>
-        /// Establish basic parameters for audit rules.
+        /// Selects cas d'usages specified in the Convention BIM.
         /// </summary>
         /// <param name="commandData"></param>
         /// <param name="message"></param>
         /// <param name="elements"></param>
         /// <returns></returns>
-        /// <exception cref="System.NotImplementedException"></exception>
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
             // Application context.
@@ -36,7 +33,7 @@
             }
 
             // Get user provided information from window and show dialog.
-            using (var window = new ConfigurationForm(uidoc))
+            using (var window = new CasUsagesForm(uidoc))
             {
                 window.ShowDialog();
 
@@ -54,9 +51,8 @@
         public static string GetPath()
         {
             // Return constructed namespace path.
-            return typeof(ConfigurationCommand).Namespace + "." + nameof(ConfigurationCommand);
+            return typeof(CasUsagesCommand).Namespace + "." + nameof(CasUsagesCommand);
         }
 
-        #endregion
     }
 }

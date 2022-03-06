@@ -52,6 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AnnotatePanel\CasUsages\CasUsagesCommand.cs" />
+    <Compile Include="Commands\AnnotatePanel\CasUsages\CasUsagesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commands\AnnotatePanel\CasUsages\CasUsagesForm.Designer.cs">
+      <DependentUpon>CasUsagesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Commands\AnnotatePanel\Configuration\ConfigurationCommand.cs" />
     <Compile Include="Commands\AnnotatePanel\Configuration\ConfigurationCommandData.cs" />
     <Compile Include="Commands\AnnotatePanel\Configuration\ConfigurationForm.cs">

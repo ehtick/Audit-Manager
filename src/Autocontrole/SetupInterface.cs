@@ -37,7 +37,7 @@
             // Create the ribbon panels.
             var annotateCommandsPanel = app.CreateRibbonPanel(tabName, "ECB Audit Manager");
             
-            #region annotate
+            #region Configuration Button
 
             // Populate button data model.
             var ConfigurationButtonData = new RevitPushButtonDataModel
@@ -55,8 +55,9 @@
 
             #endregion
 
-            #region manager
+            #region Fiche d'audit Button
 
+            // Populate button data model.
             var FicheAuditButtonData = new RevitPushButtonDataModel
             {
                 Label = "Fiche d'audit",
@@ -67,9 +68,29 @@
                 TooltipImageName = "Tooltip_Configuration_223x223.png"
             };
 
+            // Create button from provided data.
             var FicheAuditButton = RevitPushButton.Create(FicheAuditButtonData);
 
             #endregion
+
+            #region Cas d'usages
+
+            // Populate button data model.
+            var CasUsagesButtonData = new RevitPushButtonDataModel
+            {
+                Label = "Cas d'usages",
+                Panel = annotateCommandsPanel,
+                Tooltip = "Choisir règles de contrôle s’adaptant aux cas d'usages du projet.",
+                CommandNamespacePath = CasUsagesCommand.GetPath(),
+                IconImageName = "Logo_Cas d'usage_23x23.png",
+                TooltipImageName = "Tooltip_Configuration_223x223.png"
+            };
+
+            // Create button from provided data.
+            var CasUsagesButton = RevitPushButton.Create(CasUsagesButtonData);
+
+            #endregion
+
 
         }
 

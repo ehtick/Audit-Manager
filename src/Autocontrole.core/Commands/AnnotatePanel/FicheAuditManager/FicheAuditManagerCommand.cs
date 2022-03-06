@@ -4,7 +4,7 @@
     using Autodesk.Revit.DB;
 
     /// <summary>
-    /// Show "points de contrôle manager" dockable pane.
+    /// Show "ECB Fiche d'Audit Manager" dockable pane.
     /// </summary>
     /// <seealso cref="Autodesk.Revit.UI.IExternalCommand"/>
     [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]

@@ -54,5 +54,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Images\Icons\Logo_PointsDeControleManager_23x23.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Icons\Logo_Cas d%27usage_23x23.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

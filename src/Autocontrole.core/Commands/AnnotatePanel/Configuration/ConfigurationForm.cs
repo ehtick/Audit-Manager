@@ -5,7 +5,7 @@
     using Autodesk.Revit.UI;
 
     /// <summary>
-    /// Autocontrole data aquisition form.
+    /// Configuration data aquisition form.
     /// </summary>
     /// <seealso cref="System.Windows.Forms.Form"/>.
     public partial class ConfigurationForm : System.Windows.Forms.Form
